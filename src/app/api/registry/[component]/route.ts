@@ -16,7 +16,7 @@ export async function GET(
     
     const data = fs.readFileSync(registryPath, 'utf-8')
     return NextResponse.json(JSON.parse(data))
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: 'Failed to load component' }, { status: 500 })
   }
 }

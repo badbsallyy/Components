@@ -7,7 +7,7 @@ export async function GET() {
     const registryPath = path.join(process.cwd(), 'public', 'registry', 'index.json')
     const data = fs.readFileSync(registryPath, 'utf-8')
     return NextResponse.json(JSON.parse(data))
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: 'Registry not found' }, { status: 404 })
   }
 }
