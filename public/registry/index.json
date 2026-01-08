@@ -1,0 +1,23 @@
+[
+  {
+    "name": "button",
+    "type": "registry:ui",
+    "dependencies": [
+      "@radix-ui/react-slot",
+      "class-variance-authority"
+    ],
+    "files": ["ui/button.tsx"]
+  },
+  {
+    "name": "card",
+    "type": "registry:ui",
+    "dependencies": [],
+    "files": ["ui/card.tsx"]
+  },
+  {
+    "name": "input",
+    "type": "registry:ui",
+    "dependencies": [],
+    "files": ["ui/input.tsx"]
+  }
+]
